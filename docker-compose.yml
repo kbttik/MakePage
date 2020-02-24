@@ -1,0 +1,12 @@
+version: "3"
+services:
+  makepage:
+    container_name: makepage
+    build: .
+    ports:
+      - '63224:22' # 叩くport:dockerのport
+    network_mode: "bridge"
+    volumes:
+      - ./kbttik.github.io:/mnt/kbttik.github.io
+      - ./.ssh:/root/.ssh
+    tty: true
