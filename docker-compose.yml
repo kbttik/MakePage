@@ -7,5 +7,5 @@ services:
       - '63224:22' # 叩くport:dockerのport
     network_mode: "bridge"
     volumes:
-      - .:/mnt/
+      - ./:/mnt/
     tty: true
