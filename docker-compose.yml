@@ -7,6 +7,5 @@ services:
       - '63224:22' # 叩くport:dockerのport
     network_mode: "bridge"
     volumes:
-      - ./kbttik.github.io:/mnt/kbttik.github.io
-      - ./.ssh:/root/.ssh
+      - .:/mnt/
     tty: true

@@ -9,5 +9,5 @@ ssh-keygen -t rsa -b 4096 -m PEM
 ## 構成
 * 静的ページは、[他のrepository](https://kbttik.github.io/)で管理したいため、submodule化
 ```
-git submodule add <URL> kbttik.github.io
+git submodule add <URL sshでも可> kbttik.github.io
 ```
