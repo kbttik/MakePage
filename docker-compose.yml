@@ -8,4 +8,5 @@ services:
     network_mode: "bridge"
     volumes:
       - ./:/mnt/makepage
+      - ../kbttik.github.io:/mnt/kbttik.github.io
     tty: true
